@@ -7,7 +7,7 @@ from datetime import datetime
 from datasets import load_dataset
 from gen_dataset import ChessStreamDataset
 
-from old_model import TinyChessTransformer, hl_gauss_loss
+from model import TinyChessTransformer, hl_gauss_loss
 
 def train():
     from torch.utils.tensorboard import SummaryWriter
@@ -110,4 +110,5 @@ def train():
     print(f"K: {k-1},  Grad updates: {GRAD_UPDATES}")
 
 if __name__ == '__main__':
+
     train()
