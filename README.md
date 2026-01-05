@@ -5,3 +5,6 @@ Data trained from `https://huggingface.co/datasets/Lichess/chess-position-evalua
 Model plays at ~2500 elo (with 1000 node search) after 50k steps (~45 hours on a rtx 3060)
 
 Note MCTS search is coded very poorly here, please improve it if you want to put it to production
+Pre trained model will be added soon.
+
+To train, run `train.py` and leave it running. Code takes up ~11GB of VRAM.
