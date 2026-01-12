@@ -10,7 +10,7 @@ import chess.pgn
 # --- Imports ---
 try:
     from chess_env import chess_gym
-    from old_model import TinyChessTransformer
+    from model import TinyChessTransformer
 except ImportError as e:
     print(f"Error importing modules: {e}")
     sys.exit(1)
@@ -485,4 +485,5 @@ def main():
     env.close()
 
 if __name__ == "__main__":
+
     main()
